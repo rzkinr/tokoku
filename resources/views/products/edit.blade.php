@@ -1,7 +1,8 @@
 <x-app-layout>
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 px-2">
-        <div class="mt-6 flex">
+        <div class="mt-6 flex justify-between">
             <h2 class="font-semibold text-xl">Edit Products</h2>
+            @include('products.partials.delete-product-form')
         </div>
         
         <div class="mt-4" x-data="{ imageUrl: '/storage/{{ $product->foto }}' }">
